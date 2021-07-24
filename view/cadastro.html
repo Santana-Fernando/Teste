@@ -5,56 +5,121 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="styles.scss">
     <title>Document</title>
 </head>
 
 <body>
     <div class="container">
+        <h2 style="text-align: center;">Carregamentos</h2>
         <form action="#">
-            <div class="row">
-                <div class="col-25">
-                    <label for="fname">FFernando Name</label>
+            <fieldset>
+                <label>Data</label><br>
+                <input class="haffInput" type="date" name="data" placeholder="Your name.."/><br>
+    
+                <div class="divgroup">
+                    <div class="group">                    
+                        <label>Hora Inicial</label><br>
+                        <input class="completeInput" type="time" name="hora_inicial"><br>
+                    </div>
+        
+                    <div class="group">
+                        <label>Hora Final</label><br>
+                        <input class="completeInput" type="time" name="hora_final"><br>
+                    </div>
                 </div>
-                <div class="col-75">
-                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            </fieldset>
+            
+            <fieldset>
+                <label>Turno</label><br>
+                <select class="haffInput" name="turno">
+                    <option value="1º Turno">1º Turno</option>
+                    <option value="2º Turno">2º Turno</option>
+                    <option value="3º Turno">3º Turno</option>
+                </select><br>
+    
+                <div class="divgroup">
+                    <div class="group">                    
+                        <label>Motorista</label><br>
+                        <select class="completeInput" name="motorista">
+                            <option value="Rodrigues Pereira">Rodrigues Pereira</option>
+                            <option value="Ramirez Matias">Ramirez Matias</option>
+                            <option value="Eduardo Lima">Eduardo Lima</option>
+                        </select><br>
+                    </div>
+        
+                    <div class="group">                    
+                        <label>Requisição</label><br>
+                        <input class="completeInput" type="number" name="requisicao"><br>
+                    </div>
+                </div>    
+            </fieldset>
+
+
+            <fieldset>
+                <label>Material</label><br>
+                <select class="haffInput" name="material">
+                    <option value="Plímeros">Plímeros</option>
+                    <option value="Metais">Metais</option>
+                    <option value="Líquidos">Líquidos</option>
+                </select><br>
+    
+                <div class="divgroup">
+                    <div class="group">                    
+                        <label>Peso de Entrada</label><br>
+                        <input class="completeInput" type="number" name="peso_entrada"/><br>
+                    </div>
+        
+                    <div class="group">                    
+                        <label>Peso de saida</label><br>
+                        <input class="completeInput" type="number" name="peso_saida"/><br>
+                    </div>
+                </div>  
+                
+                <label>Diferença</label><br>
+                <input class="completeInput" type="number" name="diferenca_de_peso" ><br>
+            </fieldset>
+            
+            <fieldset>                
+                <label>TAG(Veículo)</label><br>
+                <select class="haffInput" name="tag">
+                    <option value="Volvo">Volvo</option>
+                    <option value="Scania">Scania</option>
+                    <option value="Mercedes">Mercedes</option>
+                </select><br>
+                
+                <label>KM</label><br>
+                <input class="completeInput" type="number" name="KM"><br>
+    
+                <div class="divgroup">
+                    <div class="group">                    
+                        <label>Origem</label><br>
+                        <select class="completeInput" name="origem">
+                            <option value="Fabrica de Produtos de Plásticos LTDA">Fabrica de Produtos de Plásticos LTDA</option>
+                            <option value="Fabrica de Produtos Metálicos LTDA">Fabrica de Produtos Metálicos LTDA</option>
+                            <option value="Fabrica de Fluidos Químicos LTDA">Fabrica de Fluidos Químicos LTDA</option>
+                        </select><br>
+                    </div>
+        
+                    <div class="group">                    
+                        <label>Destino</label><br>
+                        <select class="completeInput" name="destino">
+                            <option value="Lojas de Embalagens Plásticas">Lojas de Embalagens Plásticas</option>
+                            <option value="Lojas de Embalagens Metálicas">Lojas de Embalagens Metálicas</option>
+                            <option value="Laboratório de Tratamento de Produtos Químicos">Laboratório de Tratamento de Produtos Químicos</option>
+                        </select><br>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-25">
-                    <label for="lname">Last Name</label>
-                </div>
-                <div class="col-75">
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-25">
-                    <label for="country">Country</label>
-                </div>
-                <div class="col-75">
-                    <select id="country" name="country">
-                        <option value="australia">Australia</option>
-                        <option value="canada">Canada</option>
-                        <option value="usa">USA</option>
-                    </select>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-25">
-                    <label for="subject">Subject</label>
-                </div>
-                <div class="col-75">
-                    <textarea id="subject" name="subject" placeholder="Write something.."
-                        style="height:200px"></textarea>
-                </div>
-            </div>
-            <div class="row">
-                <input type="submit" value="Submit">
-            </div>
+            </fieldset>
+
+            <label>Observações</label><br>
+            <textarea name="observacoes" class="completeInput" placeholder="Empecifique.." style="height:200px; width: 100%;"></textarea><br>
+
+
+            <input type="submit" value="Submit">
         </form>
     </div>
 
 </body>
-
+<script src="../script/script.js"></script>
 </html>

@@ -1,0 +1,97 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+.completeInput {
+  width: 99%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-size: 20px;
+}
+
+input, select, option {
+  color: rgb(68, 68, 68);
+}
+
+.divgroup {
+  display: flex;
+  width: 100%;
+}
+
+.group {
+  width: 50%;
+}
+
+.haffInput {
+  width: 49%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-size: 20px;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: rgba(66, 66, 66, 0.3);
+
+  margin: auto;
+  padding: 20px;
+  width: 50%;
+  color: rgb(57, 57, 57);
+}
+
+fieldset {
+  margin: 10px;
+  border: 1px solid rgb(164, 164, 164);
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin: auto;
+    padding: 20px;
+    width: 90%;
+  }
+
+  .completeInput {
+    width: 100%;
+  }
+
+  .haffInput {
+    width: 100%;
+  }
+
+  .divgroup {
+    display: block;
+    width: 100%;
+  }
+
+  .group {
+    width: 100%;
+  }
+
+  fieldset {
+    margin: 0px;
+    border: 0px solid rgb(164, 164, 164);
+  }
+}
