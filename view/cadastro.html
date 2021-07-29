@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.scss">
-    <title>Document</title>
+    <title>Carregamentos</title>
 </head>
 
 <body>
@@ -14,6 +14,8 @@
         <h2 style="text-align: center;">Carregamentos</h2>
         <form action="#">
             <fieldset>
+                <input class="haffInput" name="Id" type="number" style="width: 5%; display: none;"/><br>
+
                 <label>Data</label><br>
                 <input class="haffInput" type="date" name="data" placeholder="Your name.." /><br>
 
@@ -33,9 +35,9 @@
             <fieldset>
                 <label>Turno</label><br>
                 <select class="haffInput" name="turno">
-                    <option value="1º Turno">1º Turno</option>
-                    <option value="2º Turno">2º Turno</option>
-                    <option value="3º Turno">3º Turno</option>
+                    <option value="1º turno">1º turno</option>
+                    <option value="2º turno">2º turno</option>
+                    <option value="3º turno">3º turno</option>
                 </select><br>
 
                 <div class="divgroup">
@@ -67,17 +69,17 @@
                 <div class="divgroup">
                     <div class="group">
                         <label>Peso de Entrada</label><br>
-                        <input class="completeInput" onkeyup="calcularDiferencaDePreco()" type="number" id="peso_entrada" name="peso_entrada" /><br>
+                        <input class="completeInput" onkeyup="calcularDiferencaDePreco()" type="number" name="peso_entrada" /><br>
                     </div>
 
                     <div class="group">
                         <label>Peso de saida</label><br>
-                        <input class="completeInput" onkeyup="calcularDiferencaDePreco()" type="number" id="peso_saida" name="peso_saida" /><br>
+                        <input class="completeInput" onkeyup="calcularDiferencaDePreco()" type="number" name="peso_saida" /><br>
                     </div>
                 </div>
 
                 <label>Diferença de Peso</label><br>
-                <input class="completeInput" type="number" id="diferenca_de_peso" name="diferenca_de_peso" disabled><br>
+                <input class="completeInput" type="number" name="diferenca_de_peso" disabled><br>
             </fieldset>
 
             <fieldset>
@@ -120,7 +122,7 @@
                 style="height:200px; width: 100%;"></textarea><br>
 
 
-            <input type="submit" value="Submit">
+            <input type="submit" value="Salvar">
         </form>
     </div>
 
@@ -131,6 +133,7 @@
             <caption>Relatório de carregamentos</caption>
             <thead>
                 <tr>
+                    <th>Registro</th>
                     <th>Data</th>
                     <th>Hora Inicial</th>
                     <th>Hora Final</th>
